@@ -1,0 +1,79 @@
+[
+  {
+    "slug": "esp32",
+    "name": "ESP32",
+    "summary": "Espressif's flagship Wi-Fi + Bluetooth SoC family.",
+    "timeline": [
+      {
+        "version": "ESP-IDF 5.3",
+        "date": "2024-08-12",
+        "changes": [
+          "Improved Wi-Fi 6 support on ESP32-C6",
+          "New low-power coprocessor APIs",
+          "Bluetooth LE 5.3 host stack updates"
+        ]
+      },
+      {
+        "version": "ESP-IDF 5.2",
+        "date": "2024-02-09",
+        "changes": [
+          "Stable support for ESP32-H2 (Thread / Zigbee)",
+          "Reduced flash footprint for OTA",
+          "New power management profiling tools"
+        ]
+      },
+      {
+        "version": "ESP-IDF 5.1",
+        "date": "2023-08-04",
+        "changes": [
+          "Matter 1.1 support",
+          "Wi-Fi performance improvements",
+          "Updated mbedTLS to 3.x"
+        ]
+      }
+    ],
+    "shouldUpgrade": "If you're on 5.1 or earlier and shipping new hardware, upgrading to 5.3 unlocks Wi-Fi 6 (C6) and meaningful power tooling. Existing fleets on 5.2 can wait unless you need Thread/Matter improvements.",
+    "faq": [
+      {
+        "q": "Is ESP-IDF 5.x backward compatible with 4.x?",
+        "a": "No. There are breaking API changes around Wi-Fi, Bluetooth, and the build system. Plan a migration sprint."
+      },
+      {
+        "q": "Which chips support Matter?",
+        "a": "ESP32-C3, C6, H2, S3, and ESP32 (classic) support Matter via ESP-Matter SDK."
+      }
+    ]
+  },
+  {
+    "slug": "nrf-connect",
+    "name": "nRF Connect SDK",
+    "summary": "Nordic's unified SDK for nRF52, nRF53, and nRF91 series.",
+    "timeline": [
+      {
+        "version": "v2.6.0",
+        "date": "2024-03-15",
+        "changes": [
+          "Bluetooth LE Audio LC3 improvements",
+          "Matter 1.2 support",
+          "Updated Zephyr to 3.5"
+        ]
+      },
+      {
+        "version": "v2.5.0",
+        "date": "2023-11-10",
+        "changes": [
+          "nRF54 series preview support",
+          "DECT NR+ APIs",
+          "Improved cellular power consumption"
+        ]
+      }
+    ],
+    "shouldUpgrade": "Recommended for any project starting after Q1 2024. Existing nRF91 cellular projects should validate modem firmware compatibility before upgrading.",
+    "faq": [
+      {
+        "q": "Does v2.6 require a new modem firmware?",
+        "a": "It is recommended but not strictly required for nRF9160. Check the release notes for your exact part."
+      }
+    ]
+  }
+]

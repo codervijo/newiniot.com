@@ -1,0 +1,24 @@
+[
+  {
+    "id": "mqtt-cost",
+    "title": "MQTT Cost Calculator",
+    "description": "Estimate monthly cost and bandwidth for your MQTT fleet across AWS IoT, Azure IoT, or custom brokers.",
+    "category": "Cost",
+    "path": "/tools/mqtt-cost"
+  },
+  {
+    "id": "battery-life",
+    "title": "IoT Battery Life Calculator",
+    "description": "Predict device battery life based on transmission cycles, sleep current, and active current draw.",
+    "category": "Power",
+    "path": "/tools/battery-life"
+  },
+  {
+    "id": "ota-bandwidth",
+    "title": "OTA Update Bandwidth Calculator",
+    "description": "Plan rollout windows by computing total bandwidth for OTA firmware updates across device fleets.",
+    "category": "Networking",
+    "path": "/tools/ota-bandwidth",
+    "comingSoon": true
+  }
+]
